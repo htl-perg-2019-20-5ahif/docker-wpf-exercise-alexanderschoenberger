@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Name="listCars" Background="LightGoldenrodYellow" 
+        BorderBrush="Black" BorderThickness="1" 
+        Click="listCars_Click" >
+            listCars
+        </Button>
+        <Label>Select Available Cars</Label>
+        <DatePicker Height="25" HorizontalAlignment="Left" Name="datePicker1" VerticalAlignment="Top" Width="115" />
+        <Button Name="Car" Background="LightGoldenrodYellow" 
+        BorderBrush="Black" BorderThickness="1" 
+        Click="available_Click">
+            Cars
+        </Button>
+        <Label>Book Car</Label>
+        <DatePicker Height="25" HorizontalAlignment="Left" Name="datePicker2" VerticalAlignment="Top" Width="115" />
+        <TextBox Grid.Row="1" Name="car" Margin="5"/>
+        <Button Name="book" Background="LightGoldenrodYellow" 
+        BorderBrush="Black" BorderThickness="1" 
+        Click="book_Click" >
+            Book
+        </Button>
+    </StackPanel>
+</Window>
